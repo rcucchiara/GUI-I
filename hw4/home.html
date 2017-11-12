@@ -1,0 +1,90 @@
+<!--
+    Robert Cucchiara
+    robert_cucchiara@student.uml.edu
+    COMP4610 Gui Programming I
+    created: 11/9/2017    
+    This web page is the html of hw4 
+-->
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- link the css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+        <!-- link the javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="scripts/hw4tablegenerator.js"></script>
+        <script type="text/javascript" src="scripts/hw4formgenerator.js"></script>
+        
+        <!-- Set the web page tab title -->
+        <title>Assignment 4</title>
+    </head>
+    
+    <body>
+        
+        <h1>Assignment 4</h1>
+        <h2>Car Comparer</h2>         
+
+        
+        <!-- Form for the user to input data -->
+        <div class="center">
+            <form name="user_input">
+                <fieldset>
+                    <legend>Vehicle Information</legend>
+                    <p>
+                        Highest Price of Vehicle: $ 
+                        <input type="text" name="msrp_high" value="" placeholder="Highest Price">
+                        <br><br>
+                        Lowest Price of Vehicle: $ 
+                        <input type="text" name="msrp_low" value="" placeholder="Lowest Price">
+                        <br><br>
+                        Number of Columns: 
+                        <input type="text" name="msrp_interval" value="" placeholder="columns">
+                    </p>
+                    <p>
+                        Highest Miles Per Gallon: 
+                        <input type="text" name="mpg_high" value="" placeholder="Highest mpg">
+                        <br><br>
+                        Lowest Miles Per Gallon: 
+                        <input type="text" name="mpg_low" value="" placeholder="Lowest mpg">
+                        <br><br>
+                        Number of Rows: 
+                        <input type="text" name="mpg_interval" value="" placeholder="rows">
+                    </p>
+                    <!--<p>
+                        Estimated miles driven per year: 
+                        <input type="text" name="miles_a_year" value="" placeholder="Miles">
+                        <br><br>
+                        Length of contract: 
+                        <input type="text" name="months" value="" placeholder="Months">
+                    </p>-->
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- financing options radio buttons -->
+        <!--<form name="financing_options">
+            <input type="radio" name="financing" value="option1" id="opt1" onclick="getForm1()" >Option 1
+            <input type="radio" name="financing" value="option2" id="opt2"  onclick="getForm2()">Option 2
+            <input type="radio" name="financing" value="option3" id="opt3" onclick="getForm3()">Lease
+        </form>
+        
+        <!-- Display the form the user chooses -->
+        <!--<div class="center">
+            <div id="finance_form"></div>
+        </div>
+        
+        <!-- Submit button -->
+        <div class="buttonLayout">
+            <button onclick="getTable()">Submit</button>
+        </div>
+        
+        <!-- Table will be generated here -->
+        <div id="info_table"></div>
+        
+    </body>
+</html>
