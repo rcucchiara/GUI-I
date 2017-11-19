@@ -1,0 +1,75 @@
+/*
+    Robert Cucchiara
+    robert_cucchiara@student.uml.edu
+    created: 11/10/2017
+    last modified: 11/16/2017
+    This page is the cascading style sheet for homework 5
+*/
+
+body{
+    background-color: #2c93a3;
+}
+
+.center{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+h1, h2{
+    text-align: center;
+    color: white;
+}
+
+p{
+    padding: 12px;
+}
+
+form{
+    text-align: center;
+    color: white;
+}
+
+legend{
+    text-align: left;
+    color: #ffae00;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.buttonLayout{
+    text-align: center;
+    padding: 16px;
+}
+
+th{
+    color: white;
+    background-color: #181a1f;
+    border-style:ridge;
+    border-color: black;
+    font-size: 120%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td{
+    background-color: #2c323c;
+    color: white;
+    text-align: center;
+    border-style:ridge;
+    border-color: black;
+    font-size: 110%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+form .error{
+    color: #ff2000;
+    font-weight: bold;
+}
