@@ -1,0 +1,96 @@
+<!--
+    Robert Cucchiara
+    robert_cucchiara@student.uml.edu
+    COMP4610 Gui Programming I
+    created: 11/9/2017    
+    last edited: 12/3/2017
+    This web page is the html of hw5 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        
+        <!-- Set the web page tab title -->
+        <title>Assignment 6</title>
+        
+        <!-- link the css -->
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="css/sliderStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    </head>
+    
+    <body>
+ 
+        <h1>Assignment 6</h1>
+        <h2>Car Comparer</h2>
+        
+        <!-- Form for the user to input data -->
+        <div class="center">
+            <form name="user_input" id="data">
+                <fieldset>
+                    <legend>Vehicle Information</legend>
+                    <p>
+                        Highest Price of Vehicle: $ 
+                        <input type="number" name="msrp_high" id="msrp_high">
+                        <br><br>
+                        Lowest Price of Vehicle: $ 
+                        <input type="number" name="msrp_low" id="msrp_low">
+                    <div id="slider-msrp" class="sliders"></div>
+                    
+                    <p>
+                        Number of Columns: 
+                        <input type="number" name="msrp_interval" id="msrp_interval">
+                    </p>
+                    <div id="slider-column" class="sliders"></div>
+                    
+                    <p>
+                        Highest Miles Per Gallon: 
+                        <input type="number" name="mpg_high" id="mpg_high">
+                        <br><br>
+                        Lowest Miles Per Gallon: 
+                        <input type="number" name="mpg_low" id="mpg_low">
+                    </p>
+                    <div id="slider-mpg" class="sliders"></div>
+                    
+                    <p>
+                        Number of Rows: 
+                        <input type="number" name="mpg_interval" id="mpg_interval">
+                    </p>
+                    <div id="slider-row" class="sliders"></div>
+                </fieldset>
+            </form>
+        </div>
+        
+        <!-- Submit button -->
+        <div class="buttonLayout">
+            <button id="add_tab" onclick="" >Add to tabs</button>
+        </div>
+        
+        <!-- Table will be generated here -->
+        <div id="info_table"></div>
+        
+        <br><br>
+        
+        <!-- The tabs for the tables generated -->
+        <div id="tabs">
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+                <!-- link the javascript and jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/additional-methods.min.js"></script>
+
+
+        <script type="text/javascript" src="scripts/tablegenerator.js"></script>
+        <script type="text/javascript" src="scripts/validate.js"></script>
+        <script type="text/javascript" src="scripts/sliders-and-tabs.js"></script>
+        
+    </body>
+</html>
